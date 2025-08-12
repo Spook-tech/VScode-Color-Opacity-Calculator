@@ -1,0 +1,35 @@
+{
+  "name": "color-opacity-calculator",
+  "displayName": "Color Opacity Calculator",
+  "description": "Calculate hex color with opacity to hex format with alpha channel",
+  "version": "0.0.1",
+  "license": "MIT",
+  "engines": {
+    "vscode": "^1.74.0"
+  },
+  "categories": ["Other"],
+  "activationEvents": [],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "colorOpacityCalculator.open",
+        "title": "Color Opacity Calculator"
+      }
+    ]
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "node ./test/runTest.js"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.74.0",
+    "@types/node": "16.x",
+    "eslint": "^8.28.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Spook-tech/color-opacity-calculator"
+  }
+}
